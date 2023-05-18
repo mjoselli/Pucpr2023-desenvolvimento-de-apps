@@ -42,8 +42,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     TvShowsList(){
-                        Toast.makeText(this,
-                        it.name,Toast.LENGTH_SHORT).show()
+                        startActivity(DetailActivity.intent(this,it))
                     }
                 }
             }
